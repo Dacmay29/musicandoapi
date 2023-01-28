@@ -1,0 +1,28 @@
+{
+  "name": "musicandoapi",
+  "version": "1.0.0",
+  "description": "_Esta base de datos está compuesta por las siguientes tablas_\r - Artistas\r - Canciones\r - Albumes\r - Generos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dacmay29/musicandoapi.git"
+  },
+  "author": "David Cuentas May (dacmay29@outlook.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dacmay29/musicandoapi/issues"
+  },
+  "homepage": "https://github.com/Dacmay29/musicandoapi#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
