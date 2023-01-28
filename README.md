@@ -30,9 +30,14 @@ _Las relaciones están definidas de la siguiente forma_
 
 6 Configurar Sequelize para conectarse a la base de datos importada.
 
-Crear los modelos de datos correspondientes a las tablas de la base de datos.
-Crear los controladores para manejar las peticiones HTTP correspondientes a cada endpoint.
-Crear las rutas para manejar las peticiones a cada endpoint.
-Probar tu aplicación mediante herramientas de prueba de API como Postman.
-Subir tu código a GitHub y enviar el enlace al correo.
-Recuerda seguir las instrucciones del README y documentar tu código para que sea legible y fácil de seguir.
+7 Crear los modelos de datos correspondientes a las tablas de la base de datos.
+
+8 Crear los controladores para manejar las peticiones HTTP correspondientes a cada endpoint.
+
+9 Crear las rutas para manejar las peticiones a cada endpoint.
+
+10 Probar tu aplicación mediante herramientas de prueba de API como Postman.
+
+11 Subir tu código a GitHub y enviar el enlace al correo.
+
+12 Recuerda seguir las instrucciones del README y documentar tu código para que sea legible y fácil de seguir.
