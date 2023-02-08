@@ -58,3 +58,10 @@ Aclaración: para todos los endpoints se debe devolver un json con su código de
 11 Subir tu código a GitHub y enviar el enlace al correo.
 
 12 Seguir las instrucciones del README y documentar tu código para que sea legible y fácil de seguir.
+
+
+Se finaliza proyecto  terminando  todos los requeriomeinto del caso realizando pruebas  con thunder client en  VSC
+
+gracias Por la oportunidad  de  realizar  mi proyecto  solo ... 
+
+David Cuentas May 
