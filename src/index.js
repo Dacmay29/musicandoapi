@@ -8,4 +8,4 @@ app.use(express.json());
 app.use('/canciones', songRouter);
 app.use('/generos', genreRouter);
 
-app.listen('3000', () => console.log('Servidor corriendo en el puerto 3000'));
+app.listen('3050', () => console.log('Servidor corriendo en el puerto 3050'));
