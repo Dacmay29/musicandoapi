@@ -17,7 +17,8 @@ module.exports = (sequelize, dataTypes) => {
   };
   let config = {
     tableName: 'canciones',
-    timestamps: false
+    createdAt: "created_at", // alias createdAt as created_date
+    updatedAt: "updated_at", 
   };
   const Cancion = sequelize.define(alias, cols, config)
 
@@ -26,7 +27,16 @@ module.exports = (sequelize, dataTypes) => {
       as: 'genero',
       foreignKey: 'genero_id'
     });
+    Cancion.belongsTo(models.Album, {
+      as: 'album',
+      foreignKey: 'album_id'
+    });
+    Cancion.belongsTo(models.Artist, {
+      as: 'artista',
+      foreignKey: 'artista_id'
+    });
   };
+
 
   return Cancion
 }

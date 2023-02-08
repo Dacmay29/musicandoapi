@@ -1,42 +1,39 @@
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Artist';
     let cols = {
-      id: {
-        type: dataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-      },
-      nombre: {
-        type: dataTypes.STRING,
-        allowNull: false
-      },
-      apellido: {
-        type: dataTypes.STRING,
-        allowNull: false
-      },
-  
+        id: {
+            type: dataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        nombre: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        apellido: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+
     };
     let config = {
-      tableName: 'artista',
-      timestamps: false
+        tableName: 'artista',
+        timestamps: false
     };
     const Artist = sequelize.define(alias, cols, config)
-  
+
     Artist.associate = function (models) {
-        Artist.belongsToMany(models.Cancion, { 
+        Artist.hasMany(models.Cancion, {
             as: "canciones",
-            foreignKey: 'caniones_id',
-            
-            timestamps: false
+            foreignKey: 'id',
         })
     };
-  
+
     return Artist;
-  
-  }
-  
-  
-  
-  
-  
-  
+
+}
+
+
+
+
+

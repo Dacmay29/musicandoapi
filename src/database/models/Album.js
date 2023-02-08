@@ -13,8 +13,7 @@ module.exports = (sequelize, dataTypes) => {
       duracion: {
         type: dataTypes.INTEGER,
         allowNull: false
-      }
-//   
+      } 
     };
     let config = {
       tableName: 'albumes',
