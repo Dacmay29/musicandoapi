@@ -13,7 +13,7 @@ module.exports = (sequelize, dataTypes) => {
     duracion: {
       type: dataTypes.INTEGER,
       allowNull: false
-    }
+    },
   };
   let config = {
     tableName: 'canciones',
@@ -21,9 +21,12 @@ module.exports = (sequelize, dataTypes) => {
   };
   const Cancion = sequelize.define(alias, cols, config)
 
-  Cancion.associate = function(models){
-    
-  }
+  Cancion.associate = function (models) {
+    Cancion.belongsTo(models.Genero, {
+      as: 'genero',
+      foreignKey: 'genero_id'
+    });
+  };
 
   return Cancion
 }

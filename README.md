@@ -53,8 +53,8 @@ Aclaración: para todos los endpoints se debe devolver un json con su código de
 
 9 Crear las rutas para manejar las peticiones a cada endpoint.
 
-10 Probar tu aplicación mediante herramientas de prueba de API como Postman.
+10 Probar tu aplicación mediante herramientas de prueba de API como Postman y Thunder Client.
 
 11 Subir tu código a GitHub y enviar el enlace al correo.
 
-12 Recuerda seguir las instrucciones del README y documentar tu código para que sea legible y fácil de seguir.
+12 Seguir las instrucciones del README y documentar tu código para que sea legible y fácil de seguir.
