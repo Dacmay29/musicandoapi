@@ -4,6 +4,7 @@ const Cancion = require('../database/models');
 const songController = {
   list: function (req, res) {
     db.Cancion.findAll()
+    
       .then(canciones => res.send(canciones))
       .catch(error => {
         console.error(error);
@@ -63,12 +64,17 @@ const songController = {
       })
       .catch((error) => res.send(error));
   },
-  detail: (req, res) => {
-    db.Cancion.findByPk(req.params.id)
-      .then(canciones => {
+
+detail: (req, res) => {
+  db.Cancion.findByPk(req.params.id)
+    .then(canciones => {
+      if (!canciones) {
+        res.status(404).send('Cancion no encontrada'); // returns 404 status code and error message
+      } else {
         res.send(canciones);
-      }).catch(error => res.send(error));
-  },
+      }
+    }).catch(error => res.send(error));
+},
 };
 
 module.exports = songController;
